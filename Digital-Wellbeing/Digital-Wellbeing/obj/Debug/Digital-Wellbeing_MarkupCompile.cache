@@ -4,17 +4,23 @@
 winexe
 C#
 .cs
-C:\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\obj\Debug\
+C:\Users\kevin\Documents\GitHub\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\obj\Debug\
 Digital_Wellbeing
 none
 false
 DEBUG;TRACE
-C:\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\App.xaml
-11151548125
+C:\Users\kevin\Documents\GitHub\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\App.xaml
+3-349979442
 
+<<<<<<< HEAD
 6-344552185
 14723588187
 MainWindow.xaml;
+=======
+7-465773947
+141062510435
+MainWindow.xaml;Page1.xaml;Page2.xaml;
+>>>>>>> a85684e4df66d3b25bb108d7b3360895afc62937
 
 True
 
