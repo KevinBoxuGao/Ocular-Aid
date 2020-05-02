@@ -71,7 +71,7 @@ for epoch in range(N_EPOCHS):
         optimizer.step()
 
         step += 1
-        print("\rEpoch", epoch, "    Step", step, end = "")
+        print("\rEpoch", epoch + 1, "    Step", step, end = "")
 
     # Validation run
     model.eval()
