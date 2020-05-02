@@ -16,25 +16,13 @@ using System.Windows.Shapes;
 namespace Digital_Wellbeing
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page1 : Page
     {
-        public MainWindow()
+        public Page1()
         {
             InitializeComponent();
-        }
-
-        private void Page1(object sender, RoutedEventArgs e)
-        {
-            //Console.WriteLine("This is page1");
-            Main.Navigate(new Page1());
-        }
-
-        private void Page2(object sender, RoutedEventArgs e)
-        {
-            //Console.WriteLine("This is page2");
-            Main.Navigate(new Page2());
         }
     }
 }
