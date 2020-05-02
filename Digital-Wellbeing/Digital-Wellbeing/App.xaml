@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:Digital_Wellbeing"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <FontFamily x:Key="Raleway">pack://application:,,,/Fonts/#Raleway</FontFamily>
     </Application.Resources>
 </Application>

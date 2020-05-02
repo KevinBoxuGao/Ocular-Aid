@@ -113,4 +113,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+   <ItemGroup>
+  <Resource Include="Fonts\Raleway-Bold.ttf" />
+  <Resource Include="Fonts\Raleway-BoldItalic.ttf" />
+  <Resource Include="Fonts\Raleway-Italic.ttf" />
+  <Resource Include="Fonts\Raleway-Regular.ttf" />
+  <Resource Include="Fonts\Raleway-SemiBold.ttf" />
+</ItemGroup>
 </Project>

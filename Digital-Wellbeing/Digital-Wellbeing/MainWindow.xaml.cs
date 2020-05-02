@@ -36,5 +36,10 @@ namespace Digital_Wellbeing
             //Console.WriteLine("This is page2");
             Main.Navigate(new Page2());
         }
+
+        private void Main_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }
