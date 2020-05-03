@@ -3,7 +3,7 @@ import os
 import sys
 import numpy as np
 
-video_path = "./clips/" + sys.argv[1]
+os.makedirs("./model_inputs/input/", exist_ok = True)
 
 # Load the Haar cascades
 face_cascade = cv2.CascadeClassifier('./haar_cascades/haarcascade_frontalface_default.xml')
@@ -43,25 +43,24 @@ def detect(gray, frame):
         return np.array([False])
 
 
-capture = cv2.VideoCapture(video_path)
-imgs = []
-os.makedirs("./model_inputs/input/", exist_ok = True)
+capture = cv2.VideoCapture(0)
 
-while capture.isOpened():
+
+(major_ver, minor_ver, subminor_ver) = (cv2.__version__).split('.')
+
+if int(major_ver) < 3:
+    fps = int(capture.get(cv2.cv.CV_CAP_PROP_FPS))
+else:
+    fps = int(capture.get(cv2.CAP_PROP_FPS))
+
+for i in range(fps*60):
     ret, frame = capture.read()
-    if ret == False:
-        break
 
     frame = cv2.resize(frame, None, fx=0.5, fy=0.5, interpolation=cv2.INTER_AREA)
     gray  = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     f = detect(gray, frame)
     if f.all():
-        print(f)
         cv2.imwrite("./model_inputs/input/" + str(len(os.listdir("./model_inputs/"))) + ".jpg", f)
 
 capture.release()
 cv2.destroyAllWindows()
-
-os.remove(video_path)
-
-sys.stdout.write("1\n")

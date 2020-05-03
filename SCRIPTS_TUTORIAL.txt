@@ -1,0 +1,12 @@
+(Run in order when checking blink frequency)
+extract_eyes.py --> blink_counter.py
+
+
+
+Run check_face.py to check if there's a face.
+
+
+
+extract_eyes.py (stdout: none)
+blink_counter.py (stdout: # of blinks)
+check_face.py (stdout: 1 if face detected, 0 otherwise)
