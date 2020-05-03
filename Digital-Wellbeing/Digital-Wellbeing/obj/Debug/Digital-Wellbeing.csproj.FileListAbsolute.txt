@@ -41,10 +41,8 @@ C:\Users\kevin\Documents\GitHub\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing
 C:\Users\kevin\Documents\GitHub\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\obj\Debug\Page1.baml
 C:\Users\kevin\Documents\GitHub\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\obj\Debug\Page2.baml
 C:\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\obj\Debug\MainPage.g.cs
-C:\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\obj\Debug\Page1.g.cs
-C:\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\obj\Debug\Page2.g.cs
 C:\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\obj\Debug\App.baml
 C:\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\obj\Debug\MainPage.baml
-C:\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\obj\Debug\Page1.baml
-C:\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\obj\Debug\Page2.baml
 C:\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\bin\Debug\HamburgerMenu.dll
+C:\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\obj\Debug\Settings.g.cs
+C:\Hack-At-Home\Digital-Wellbeing\Digital-Wellbeing\obj\Debug\Settings.baml

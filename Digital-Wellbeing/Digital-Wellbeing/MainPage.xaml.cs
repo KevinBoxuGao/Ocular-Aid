@@ -24,5 +24,10 @@ namespace Digital_Wellbeing
         {
             InitializeComponent();
         }
+
+        private void Settings(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Settings());
+        }
     }
 }

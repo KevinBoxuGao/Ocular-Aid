@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Digital_Wellbeing
 {
     /// <summary>
-    /// Interaction logic for Page2.xaml
+    /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class Page2 : Page
+    public partial class Settings : Page
     {
-        public Page2()
+        public Settings()
         {
             InitializeComponent();
         }

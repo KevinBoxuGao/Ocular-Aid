@@ -9,6 +9,11 @@
       Title="MainPage">
 
     <Grid>
+        <Grid Margin="10,10,592,181">
+            <Button Height="64" Width="64" Margin="0,0,-1,0" Background="#00000000" BorderBrush="#00707070" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Settings">
+                <Image Source="Icons/settings.png" Stretch="Fill"/>
+            </Button>
+        </Grid>
         <TextBlock Margin="247,65,247,0" TextWrapping="Wrap" Text="Screen Time" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="42" FontWeight="Bold" TextAlignment="Center"/>
         <TextBlock Margin="305,119,305,0" TextWrapping="Wrap" Text="2h 0m today" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="30" TextAlignment="Center"/>
         <TextBlock Margin="268,173,268,0" TextWrapping="Wrap" Text="Fatigue" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="42" FontWeight="Bold" TextAlignment="Center"/>
