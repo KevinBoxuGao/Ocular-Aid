@@ -45,6 +45,7 @@ def detect(gray, frame):
 
 capture = cv2.VideoCapture(video_path)
 imgs = []
+os.makedirs("./model_inputs/input/", exist_ok = True)
 
 while capture.isOpened():
     ret, frame = capture.read()
