@@ -1,8 +1,8 @@
 import cv2
 
 # Load the Haar cascades
-face_cascade = cv2.CascadeClassifier('/home/rohan/Downloads/eye_detect/haarcascade_frontalface_default.xml')
-eyes_cascade = cv2.CascadeClassifier('/home/rohan/Downloads/eye_detect/haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier('./haar_cascades/eye_detect/haarcascade_frontalface_default.xml')
+eyes_cascade = cv2.CascadeClassifier('./haar_cascades/Downloads/eye_detect/haarcascade_eye.xml')
 
 
 cap = cv2.VideoCapture(0)
