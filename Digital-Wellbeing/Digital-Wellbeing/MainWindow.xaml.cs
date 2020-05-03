@@ -23,9 +23,10 @@ namespace Digital_Wellbeing
         public MainWindow()
         {
             InitializeComponent();
+            Main.Navigate(new MainPage());
         }
 
-        private void Page1(object sender, RoutedEventArgs e)
+        public void Page1()
         {
             //Console.WriteLine("This is page1");
             Main.Navigate(new Page1());
@@ -35,11 +36,6 @@ namespace Digital_Wellbeing
         {
             //Console.WriteLine("This is page2");
             Main.Navigate(new Page2());
-        }
-
-        private void Main_Navigated(object sender, NavigationEventArgs e)
-        {
-
         }
     }
 }

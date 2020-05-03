@@ -9,8 +9,11 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <tb:TaskbarIcon x:Name="notifyIcon" Visibility="visible"/>
-
         <Frame x:Name="Main" Margin="0.3" NavigationUIVisibility="Hidden"/>
-        
+        <Grid Margin="10,10,592,181">
+            <Button Height="64" Width="64" Margin="0,0,-1,0" Background="#00000000" BorderBrush="#00707070" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <Image Source="Icons/menu.png" Stretch="Fill"/>
+            </Button>
+        </Grid>
     </Grid>
 </Window>

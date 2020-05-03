@@ -9,11 +9,11 @@
       Title="MainPage">
 
     <Grid>
-        <TextBlock Margin="268,82,268,0" TextWrapping="Wrap" Text="Screen Time" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="42" FontWeight="Bold" TextAlignment="Center"/>
-        <TextBlock Margin="305,136,305,0" TextWrapping="Wrap" Text="2h 0m today" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="30" TextAlignment="Center"/>
-        <TextBlock Margin="268,190,268,0" TextWrapping="Wrap" Text="Fatigue" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="42" FontWeight="Bold" TextAlignment="Center"/>
-        <TextBlock Margin="161,244,161,0" TextWrapping="Wrap" Text="You are showing signs of fatigue" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="30" TextAlignment="Center"/>
-        <TextBlock Margin="268,294,268,0" TextWrapping="Wrap" Text="14" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="42" FontWeight="Bold" TextAlignment="Center"/>
-        <TextBlock Margin="190,348,190,0" TextWrapping="Wrap" Text="minutes until your next break" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="30" TextAlignment="Center"/>
+        <TextBlock Margin="247,65,247,0" TextWrapping="Wrap" Text="Screen Time" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="42" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock Margin="305,119,305,0" TextWrapping="Wrap" Text="2h 0m today" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="30" TextAlignment="Center"/>
+        <TextBlock Margin="268,173,268,0" TextWrapping="Wrap" Text="Fatigue" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="42" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock Margin="161,227,161,0" TextWrapping="Wrap" Text="You are showing signs of fatigue" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="30" TextAlignment="Center"/>
+        <TextBlock Margin="268,277,268,0" TextWrapping="Wrap" Text="14" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="42" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock Margin="190,331,190,0" TextWrapping="Wrap" Text="minutes until your next break" VerticalAlignment="Top" FontFamily="{StaticResource Raleway}" FontSize="30" TextAlignment="Center"/>
     </Grid>
 </Page>
