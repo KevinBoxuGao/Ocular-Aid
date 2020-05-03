@@ -8,7 +8,7 @@ import sys
 
 # Take frames of 60 second video and find number of blinks.
 if len(os.listdir("./model_inputs/input")) == 0:
-    sys.stdout.write("-1")
+    sys.stdout.write("0")
     quit()
 
 transform = transforms.Compose([
@@ -44,4 +44,4 @@ for image, _ in loader:
 for file in os.listdir("./model_inputs/input"):
     os.remove("./model_inputs/input/" + file)
 
-sys.stdout.write(n_blinks)
+sys.stdout.write(str(n_blinks))
