@@ -1,8 +1,8 @@
 import cv2
 
 # Load the Haar cascades
-face_cascade = cv2.CascadeClassifier('./haar_cascades/eye_detect/haarcascade_frontalface_default.xml')
-eyes_cascade = cv2.CascadeClassifier('./haar_cascades/Downloads/eye_detect/haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier('/home/rohan/Downloads/eye_detect/haarcascade_frontalface_default.xml')
+eyes_cascade = cv2.CascadeClassifier('/home/rohan/Downloads/eye_detect/haarcascade_eye.xml')
 
 
 cap = cv2.VideoCapture(0)
@@ -46,9 +46,12 @@ def detect(gray, frame):
       eyeh.append(eh)
 
     try:  
-      cv2.rectangle(roi_color, (min(eyex),min(eyey)), (max(eyex)+max(eyew), max(eyey)+max(eyeh)), (0, 255, 0), 2)
+      frame = roi_color[eyey[0]:eyey[0] + eyeh[0] , eyex[0]:eyex[0] + eyew[0]]
     except ValueError:
       pass
+    except IndexError:
+      pass
+
   return frame
 
 while True:
