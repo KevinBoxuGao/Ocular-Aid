@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Digital_Wellbeing
 {
@@ -20,14 +21,37 @@ namespace Digital_Wellbeing
     /// </summary>
     public partial class MainPage : Page
     {
+        public int timeUntilBreak = 20;
+        public static event EventHandler PageRefreshed;
         public MainPage()
         {
             InitializeComponent();
+            DispatcherTimer breakTimer = new DispatcherTimer();
+            breakTimer.Interval = TimeSpan.FromSeconds(60);
+            breakTimer.Tick += breakTimer_Tick;
+            breakTimer.Start();
+        }
+
+        public void breakTimer_Tick(object sender, EventArgs e)
+        {
+            if (timeUntilBreak == 1)
+            {
+                timeUntilBreak = 20;
+            } else
+            {
+                timeUntilBreak--;
+            }
+            timeLeft.Text = timeUntilBreak.ToString();
         }
 
         private void Settings(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Settings());
+        }
+
+        public void Refresh(object sender, RoutedEventArgs e)
+        {
+            PageRefreshed?.Invoke(this, e);
         }
     }
 }
