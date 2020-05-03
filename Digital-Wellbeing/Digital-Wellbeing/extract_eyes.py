@@ -4,11 +4,11 @@ import sys
 import numpy as np
 import time
 
-os.makedirs("./model_inputs/input/", exist_ok = True)
+os.makedirs("c:/Hack-At-Home/Digital-Wellbeing/Digital-Wellbeing/model_inputs/input/", exist_ok = True)
 
 # Load the Haar cascades
-face_cascade = cv2.CascadeClassifier('./haar_cascades/haarcascade_frontalface_default.xml')
-eyes_cascade = cv2.CascadeClassifier('./haar_cascades/haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier('c:/Hack-At-Home/Digital-Wellbeing/Digital-Wellbeing/haar_cascades/haarcascade_frontalface_default.xml')
+eyes_cascade = cv2.CascadeClassifier('c:/Hack-At-Home/Digital-Wellbeing/Digital-Wellbeing/haar_cascades/haarcascade_eye.xml')
 
 def detect(gray, frame):
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
@@ -63,9 +63,9 @@ for i in range(fps*60):
     gray  = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     f = detect(gray, frame)
     if f.all():
-        cv2.imwrite("./model_inputs/input/" + str(ctr) + ".jpg", f)
+        cv2.imwrite("c:/Hack-At-Home/Digital-Wellbeing/Digital-Wellbeing/model_inputs/input/" + str(ctr) + ".jpg", f)
         ctr += 1
-    if time.time() - start > 60:
+    if time.time() - start > 30:
         break
 
 capture.release()

@@ -113,6 +113,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="model.pth" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -142,5 +143,10 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icons\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="blink_counter.py" />
+    <Content Include="check_face.py" />
+    <Content Include="extract_eyes.py" />
   </ItemGroup>
 </Project>

@@ -44,4 +44,4 @@ for image, _ in loader:
 for file in os.listdir("./model_inputs/input"):
     os.remove("./model_inputs/input/" + file)
 
-sys.stdout.write(str(n_blinks))
+sys.stdout.write(str(n_blinks * 2))

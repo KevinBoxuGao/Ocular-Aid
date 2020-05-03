@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/logo.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("blink_counter.py")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("check_face.py")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("extract_eyes.py")]
 
 

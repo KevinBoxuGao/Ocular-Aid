@@ -80,6 +80,7 @@ namespace Digital_Wellbeing
             start.RedirectStandardError = true;
             using (Process process = Process.Start(start))
             {
+                process.WaitForExit();
                 errors = process.StandardError.ReadToEnd();
                 results= process.StandardOutput.ReadToEnd();
             }
