@@ -2,6 +2,7 @@ import cv2
 import os
 import sys
 import numpy as np
+import time
 
 os.makedirs("./model_inputs/input/", exist_ok = True)
 
@@ -53,6 +54,8 @@ if int(major_ver) < 3:
 else:
     fps = int(capture.get(cv2.CAP_PROP_FPS))
 
+ctr = 0
+start = time.time()
 for i in range(fps*60):
     ret, frame = capture.read()
 
@@ -60,7 +63,10 @@ for i in range(fps*60):
     gray  = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     f = detect(gray, frame)
     if f.all():
-        cv2.imwrite("./model_inputs/input/" + str(len(os.listdir("./model_inputs/"))) + ".jpg", f)
+        cv2.imwrite("./model_inputs/input/" + str(ctr) + ".jpg", f)
+        ctr += 1
+    if time.time() - start > 60:
+        break
 
 capture.release()
 cv2.destroyAllWindows()
